@@ -1,0 +1,25 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: {{ include "nexusai.fullname" . }}-inferencestack-editor-role
+  labels:
+  {{- include "nexusai.labels" . | nindent 4 }}
+rules:
+- apiGroups:
+  - apps.edgexr.org
+  resources:
+  - inferencestacks
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - apps.edgexr.org
+  resources:
+  - inferencestacks/status
+  verbs:
+  - get
