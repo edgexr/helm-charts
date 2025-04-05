@@ -43,7 +43,7 @@ spec:
                 description: Embeddings collection name
                 type: string
               chatbotAppImage:
-                default: ghcr.io/levshvarts/ragchatbot:2024-10-03
+                default: ghcr.io/levshvarts/edgecloud-rag:2025-04-03
                 description: ChatbotApp image
                 type: string
               embeddingsUrl:

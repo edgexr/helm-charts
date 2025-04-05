@@ -32,7 +32,7 @@ controllerManager:
         - ALL
     image:
       repository: ghcr.io/edgexr/inference-operator
-      tag: lshvarts-2024-12-13
+      tag: lshvarts-2025-04-05
     resources:
       limits:
         cpu: 500m
