@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   nexusai:
   - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2025-04-05T23:57:56.348310922Z"
+    description: A Helm chart for Kubernetes
+    digest: 84210cb9f828193094221a1777592bbc9ddabd676a4c0580625b50b81c7dc466
+    name: nexusai
+    type: application
+    urls:
+    - https://github.com/edgexr/helm-charts/releases/download/nexusai-0.1.1/nexusai-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
     appVersion: 0.1.0
     created: "2025-01-24T20:56:03.77451636Z"
     description: NexusAI inference helm chart
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://github.com/edgexr/helm-charts/releases/download/nexusai-0.1.0/nexusai-0.1.0.tgz
     version: 0.1.0
-generated: "2025-01-24T20:56:03.77452175Z"
+generated: "2025-04-05T23:57:56.348319228Z"
