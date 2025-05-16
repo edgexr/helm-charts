@@ -9,3 +9,5 @@ spec:
   minioAccessKey: {{ .Values.inferenceStack.minioAccessKey }}
   minioSecretKey: {{ .Values.inferenceStack.minioSecretKey }}
   storageClassName: {{ .Values.inferenceStack.storageClassName }}
+  gpuCount: {{ .Values.inferenceStack.gpuCount }}
+  vectorDbPort: {{ .Values.inferenceStack.vectorDbPort }}

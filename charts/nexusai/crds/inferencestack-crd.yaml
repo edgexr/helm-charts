@@ -43,7 +43,7 @@ spec:
                 description: Embeddings collection name
                 type: string
               chatbotAppImage:
-                default: ghcr.io/levshvarts/edgecloud-rag:2025-04-03
+                default: ghcr.io/edgexr/nexusai-rag-app:2025-04-11
                 description: ChatbotApp image
                 type: string
               embeddingsUrl:
@@ -64,7 +64,7 @@ spec:
                 description: LLM model for inference stack
                 type: string
               llmUrl:
-                default: http://llm/v1/chat/completions
+                default: http://llm/v1/
                 description: LLM cluster API endpoint
                 type: string
               localStorage:
@@ -121,6 +121,10 @@ spec:
                 description: VectorDB cluster port number
                 format: int32
                 type: integer
+              webhookAppImage:
+                default: ghcr.io/edgexr/nexusai-rag-webhook:2025-04-11
+                description: WebhookApp image
+                type: string
             required:
             - EmbeddingsCollection
             - chatbotAppImage
@@ -142,6 +146,7 @@ spec:
             - vectorDbHost
             - vectorDbImage
             - vectorDbPort
+            - webhookAppImage
             type: object
           status:
             description: InferenceStackStatus defines the observed state of InferenceStack
